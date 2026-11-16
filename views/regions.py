@@ -47,6 +47,6 @@ def render() -> None:
             "with no ESRB rating at all.")
     cap("ESRB is the North American rating board, so games released only in Japan usually have no ESRB rating. "
         "Missing ratings there mostly mean \"Japan-only title\", not \"unrated\", which is why the original "
-        "notebook's ANOVA on ratings (excluding unrated games) understated how different Japan is.")
+        "ANOVA on ratings, which excludes unrated games, understates how different Japan is.")
 
     footer()

@@ -16,7 +16,7 @@ def render() -> None:
         "Data & method",
         "How the analysis was done",
         "The data, the cleaning decisions, why the analysis focuses on 2012-2016, and the limits. The full Python "
-        f'work is in the <a href="{NOTEBOOK_URL}" target="_blank">original notebook</a>.',
+        f'work is in the <a href="{NOTEBOOK_URL}" target="_blank">notebook</a> (updated with the corrections described here).',
     )
 
     section("The data")
@@ -49,7 +49,7 @@ def render() -> None:
        "2017. 2012-2016 covers the current generation's launch (PS4, Xbox One in 2013) and the previous one's "
        "decline. **2016 is incomplete**, so trends are read from 2012-2015.")
 
-    section("Changes from the original notebook")
+    section("Changes from the first version of the analysis")
     md("- Genre comparison uses the **median** copies per game alongside the average (same top three).\n"
        "- Review-score correlations keep **all games**, including hits, and use rank correlation.\n"
        "- **3DS is not counted as a rising platform**: its sales fell every year from 2013.\n"
