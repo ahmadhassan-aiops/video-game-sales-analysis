@@ -1,0 +1,31 @@
+{
+  "built": "2026-11-17",
+  "raw_shape": [
+    16715,
+    11
+  ],
+  "rows": 16443,
+  "games": 11426,
+  "platforms": 31,
+  "years": [
+    1980,
+    2016
+  ],
+  "tbd_user_scores": 2424,
+  "missing_before": {
+    "name": 2,
+    "platform": 0,
+    "year_of_release": 269,
+    "genre": 2,
+    "na_sales": 0,
+    "eu_sales": 0,
+    "jp_sales": 0,
+    "other_sales": 0,
+    "critic_score": 8578,
+    "user_score": 9125,
+    "rating": 6766
+  },
+  "dropped_rows": 271,
+  "duplicates": 1,
+  "no_rating_share": 0.40600863589369335
+}
