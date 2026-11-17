@@ -1,5 +1,7 @@
 # What makes a video game sell? Planning 2017 for the online store Ice
 
+**Live app:** [video-game-sales-analysis.streamlit.app](https://video-game-sales-analysis.streamlit.app/) · **Notebook and project folder:** [AIOPS-Portfolio-Projects](https://github.com/ahmadhassan-aiops/AIOPS-Portfolio-Projects/tree/main/1.%20Data-analysis-with-python-Projects/Video%20Games%20Console%20Sale%20Analysis)
+
 An interactive presentation of an exploratory data analysis by **Ahmad Hassan** (AI Engineer). 16,443 game
 releases (1980-2016) with sales by region, critic and user scores and ESRB ratings, analysed to plan the
 online store Ice's 2017 advertising.
