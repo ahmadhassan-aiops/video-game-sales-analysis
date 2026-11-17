@@ -4,7 +4,7 @@ Chart styling and builders (Plotly), shared by the analysis apps.
 Colour rules: one colour per single-series chart; a highlight colour plus a
 recessive grey when one part of the chart is the point; a one-hue light-to-dark
 ramp for heatmaps; for comparisons, categorical slots in fixed order
-(blue, orange, aqua) and never more than three series on one chart.
+(the accent, then two contrasting colours from lib/theme.py) and never more than three series on one chart.
 No colour ramps on bars, no pies, no dual axes.
 """
 
@@ -15,22 +15,19 @@ from typing import Sequence
 import pandas as pd
 import plotly.graph_objects as go
 
-# Palette (validated reference palette, light mode)
-BLUE = "#2a78d6"       # series 1 / highlight
-ORANGE = "#eb6834"     # series 2
-AQUA = "#1baf7a"       # series 3
+# Palette: per-app colours from lib/theme.py, neutrals shared
+from lib.theme import ACCENT, QUIET, SEQUENTIAL, SERIES_2, SERIES_3  # noqa: E402
+
+BLUE = ACCENT          # series 1 / highlight (the name is historical: it is the app's accent)
+ORANGE = SERIES_2      # series 2
+AQUA = SERIES_3        # series 3
 SERIES = [BLUE, ORANGE, AQUA]
-QUIET = "#c9d6e6"      # de-emphasised bars
 INK = "#0b0b0b"
 INK_2 = "#52514e"
 MUTED = "#898781"
 GRID = "#e1e0d9"
 AXIS = "#c3c2b7"
 SURFACE = "#fcfcfb"
-SEQUENTIAL = [
-    [0.0, "#f2f7fd"], [0.15, "#cde2fb"], [0.3, "#9ec5f4"], [0.45, "#6da7ec"],
-    [0.6, "#3987e5"], [0.75, "#256abf"], [0.9, "#184f95"], [1.0, "#0d366b"],
-]
 
 FONT = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif'
 CONFIG = {"displayModeBar": False, "scrollZoom": False}
