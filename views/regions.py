@@ -46,7 +46,7 @@ def render() -> None:
             f"({s.loc['M', 'Europe']:.0%}). In Japan <b>{s.loc['No rating', 'Japan']:.0%}</b> of sales are games "
             "with no ESRB rating at all.")
     cap("ESRB is the North American rating board, so games released only in Japan usually have no ESRB rating. "
-        "Missing ratings there mostly mean \"Japan-only title\", not \"unrated\", which is why the original "
-        "ANOVA on ratings, which excludes unrated games, understates how different Japan is.")
+        "Missing ratings there mostly mean \"Japan-only title\", not \"unrated\", so they are shown as their own "
+        "group: leaving them out would understate how different Japan is.")
 
     footer()

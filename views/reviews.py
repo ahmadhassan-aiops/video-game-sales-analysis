@@ -41,9 +41,8 @@ def render() -> None:
             f"most platforms ({(t['User score'].abs() < 0.25).sum()} of {len(t)} between -0.25 and +0.25); Wii U, with "
             f"few games, is the exception ({t.set_index('Platform').loc['WiiU', 'User score']:+.2f}). The sales axis is "
             "logarithmic because a few hits sell a hundred times more than a typical game.")
-    note("The first version of the analysis computed these correlations after removing high-selling games as outliers, which "
-         "removes the hits that matter most. Here every game is kept, and rank (Spearman) correlation limits the "
-         "influence of extreme values instead.")
+    note("Every game is kept, including the hits that matter most, and rank (Spearman) correlation limits the "
+         "influence of extreme values.")
 
     alpha = st.select_slider("Significance level (α)", options=[0.01, 0.05, 0.10], value=0.05, key="alpha")
 

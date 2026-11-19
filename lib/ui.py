@@ -174,7 +174,7 @@ def insight(text: str) -> None:
 
 
 def note(text: str) -> None:
-    """Amber callout for a caveat or a correction to the original analysis."""
+    """Amber callout for a caveat."""
     st.html(f'<div class="note"><div class="callout-icon">{icon("history_edu")}</div><div>{text}</div></div>')
 
 

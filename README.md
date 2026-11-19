@@ -11,9 +11,9 @@ online store Ice's 2017 advertising.
 - **Genres**: total sales vs sales per game (median and mean), volume vs value.
 - **Regions**: platform, genre and ESRB-rating mix in North America, Europe and Japan.
 - **Reviews & tests**: critic and user scores vs sales, and two Welch t-tests on user scores.
-- **Data & method**: cleaning decisions, the 2012-2016 window, changes from the first version of the analysis, limits.
+- **Data & method**: cleaning decisions, the 2012-2016 window, analysis choices, limits.
 
-Notebook (updated with the corrections described in the app): [AIOPS-Portfolio-Projects / Video Games Console Sale Analysis](https://github.com/ahmadhassan-aiops/AIOPS-Portfolio-Projects/tree/main/1.%20Data-analysis-with-python-Projects/Video%20Games%20Console%20Sale%20Analysis)
+Notebook: [AIOPS-Portfolio-Projects / Video Games Console Sale Analysis](https://github.com/ahmadhassan-aiops/AIOPS-Portfolio-Projects/tree/main/1.%20Data-analysis-with-python-Projects/Video%20Games%20Console%20Sale%20Analysis)
 
 ## Run locally
 
